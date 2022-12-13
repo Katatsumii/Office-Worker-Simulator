@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail14
+  m_EditorClassIdentifier: 
+  title: Desperate need for assistance.
+  sender: <astronaut@robo.com>
+  smallPart: Hi it's me amercian astrounat..
+  wholeMail: 'Hi it''s me
+
+    American astronaut. I can''t return to the earth because
+    my space shuttle is out of gas. I need to tank it somewhere but I left my wallet
+    on earth. Could you please transfer me $300? I will return it when I come back
+    to the earth.
+
+
+
+    Neil Armrong'
+  Buttons:
+  - {fileID: 11400000, guid: 43cc7de282c4a4b4099deba0a023cd16, type: 2}
+  - {fileID: 11400000, guid: a049328e983507a4a96f935b1b05cad7, type: 2}
+  - {fileID: 11400000, guid: 66b6fbab1de455c4a975c9ae1ddddf0c, type: 2}
+  isAnswered: 0

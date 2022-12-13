@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74eb1b59f8738d847bdb5c778506a1f1, type: 3}
+  m_Name: Charisma2
+  m_EditorClassIdentifier: 
+  bookTitle: How to sell sand?
+  bookAuthor: George Rentan
+  bookDescription: Book about businessman building his imperium by selling sand on
+    the desert. He started small but it's the biggest business in Saudi Arabia now!
+  bookPrice: 100
+  bookTypeSprite: {fileID: 21300000, guid: bbf161c8ceda3cb4191c7d6c2702574c, type: 3}
+  typeOfBook: 1
+  bookIndex: 1

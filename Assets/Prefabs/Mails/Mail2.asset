@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail2
+  m_EditorClassIdentifier: 
+  title: Friend in need.
+  sender: <nigerianprince@rubu.com>
+  smallPart: Hi it's me your long lost cousin.
+  wholeMail: "Hi it's me your long lost cousin.\n I'm in  desperate need for your
+    help. My father died 2 days ago and I'm in power struggle for the nigerian throne.
+    I need some funging.Can you please transfer me some monei. I will pay you twofold.\n\nWith
+    best regards\nChinua\n\n"
+  Buttons:
+  - {fileID: 11400000, guid: 060dd6a0ba9bdaf4aaa9e18dbafc748a, type: 2}
+  - {fileID: 11400000, guid: b8a4fbc66f4c09746951a718481dfddb, type: 2}
+  - {fileID: 11400000, guid: 45ba1cc9f7ecb5c44ac438f112b7eb7a, type: 2}
+  isAnswered: 0

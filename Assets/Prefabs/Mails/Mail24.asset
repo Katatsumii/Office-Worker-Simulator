@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail24
+  m_EditorClassIdentifier: 
+  title: Hot girls near your location.
+  sender: <anna@uhho.com>
+  smallPart: Hey handsome, Im currently...
+  wholeMail: 'Hey handsome,
+
+    I''m currently near your current location. I really
+    need a man if you would like to meet me just go on the corner of Royce street.
+    I''m waiting.
+
+
+
+    Anna'
+  Buttons:
+  - {fileID: 11400000, guid: f369233623079194f90b02013d8548bb, type: 2}
+  - {fileID: 11400000, guid: d2178076563e9964b981769d991247a0, type: 2}
+  - {fileID: 11400000, guid: 46b6315d0b266494b8405e2264de458a, type: 2}
+  isAnswered: 0

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail15
+  m_EditorClassIdentifier: 
+  title: Dad birthday.
+  sender: <mom@love.com>
+  smallPart: Hey,did you remember about...
+  wholeMail: 'Hey,
+
+    did you remember about Dad birthday this year? We will really
+    be disappointed in you if u forgot this year too. We don''t ask for the much.
+    Rachel is such a good kid she always remembers about our birthdays. YOU BETTER
+    BE THERE.
+
+
+
+    Love
+
+    Mommy'
+  Buttons:
+  - {fileID: 11400000, guid: 91d4cf4a01cca224087e6c26bb29cfda, type: 2}
+  - {fileID: 11400000, guid: eab6db8cb49f31a40ae602c22e7ba371, type: 2}
+  - {fileID: 11400000, guid: 2e6887f3a71ec8940aee5246221f86ec, type: 2}
+  isAnswered: 0

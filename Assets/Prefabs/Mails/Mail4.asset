@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail4
+  m_EditorClassIdentifier: 
+  title: Hello Antler!
+  sender: <antler@bank.com>
+  smallPart: Dear Antler! We would like to..
+  wholeMail: "Dear Antler!\nWe would like to remind you about our cheap loans. \nBe
+    sure to check them in our application and on our website. We are really happy
+    that you are with us, and we wish you best of luck!\n\nJoshua GIlb\nfrom the
+    Antler team."
+  Buttons: []
+  isAnswered: 0

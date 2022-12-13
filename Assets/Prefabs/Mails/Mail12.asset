@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail12
+  m_EditorClassIdentifier: 
+  title: Overtime.
+  sender: <boss@alo.com>
+  smallPart: Your presence is ...
+  wholeMail: Your presence is required this afternoon in the office. You need to
+    finish your monthly report. Also, you should clean my office. When I come here
+    tomorrow it will be cleaned do you understand?
+  Buttons:
+  - {fileID: 11400000, guid: 2d5d01334e7e3e745bba7825439e09e4, type: 2}
+  - {fileID: 11400000, guid: 461b7a60f71736e40ba49bbf39a778c0, type: 2}
+  isAnswered: 0

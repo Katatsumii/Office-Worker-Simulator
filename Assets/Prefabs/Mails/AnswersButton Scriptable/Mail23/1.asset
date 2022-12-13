@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23099381560f0342a8e302e6548e896, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  btnText: OMG NEW SUMSUNG!!! (-100$)
+  staminaCost: 0
+  socialCost: 0
+  isGameOver: 0
+  money: -100
+  work: 0
+  isChoosen: 0
+  consequences: I'm still waiting for my sumsung.

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail9
+  m_EditorClassIdentifier: 
+  title: Electricity bill
+  sender: electricity@eko.com
+  smallPart: Hello sir, you haven't paid...
+  wholeMail: 'Hello sir.
+
+    You haven''t paid electricity bill yet. We need to
+    tell you that if you don''t pay it we are going to turn off your electricity.
+    With the best regards.
+
+
+
+    Eco team.'
+  Buttons:
+  - {fileID: 11400000, guid: b865f2f35b1b5c548b3e0038b771d01c, type: 2}
+  - {fileID: 11400000, guid: c113d7eb2fe908947b7add57d06b692b, type: 2}
+  isAnswered: 0

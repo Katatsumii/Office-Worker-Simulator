@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail1
+  m_EditorClassIdentifier: 
+  title: Shopping list for tommorow
+  sender: <mom@love.com>
+  smallPart: Hey,about shopping list..
+  wholeMail: 'Hey Sweetie,
+
+    I''m sending you a shopping list for tomorrow. Could
+    you please go shopping after work? I need some tomatoes, a chicken breast and
+    one pack of sugar.
+
+
+
+    Love you Mommy'
+  Buttons:
+  - {fileID: 11400000, guid: 908bca94b64a6f8418ae152a457735a8, type: 2}
+  - {fileID: 11400000, guid: be7f24c5c35c91a438a1645f3d630eb9, type: 2}
+  isAnswered: 0

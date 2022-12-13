@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail7
+  m_EditorClassIdentifier: 
+  title: DONT THINK U CAN ESCAPE
+  sender: <jenny@daisy.eu>
+  smallPart: HEY DORK DON'T THINK ABOUT..
+  wholeMail: 'HEY DORK DON''T THINK ABOUT RUNNING AWAY I KNOW U ARE FATHER OF MY
+    BABY BOY U WILL REGRET TRYING TO DITCH ME. YOU WILL EITHER PAY ME $1000 OR MY
+    CURRENT BOYFRIEND GONNA VISIT YOU.
+
+    JENNY'
+  Buttons:
+  - {fileID: 11400000, guid: 64de83597eaaab34e87046bd8aeeef46, type: 2}
+  - {fileID: 11400000, guid: 1bbe03b7ee42ad045b4394e02754d445, type: 2}
+  - {fileID: 11400000, guid: bf5ca0e5cc617364b93dc4c7d290936b, type: 2}
+  isAnswered: 0

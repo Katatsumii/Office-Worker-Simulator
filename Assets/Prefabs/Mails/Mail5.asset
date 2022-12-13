@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail5
+  m_EditorClassIdentifier: 
+  title: Hey kid wanna buy some?
+  sender: <normalcitizen@uhoo.com>
+  smallPart: Hey, I got my hands on some..
+  wholeMail: 'Hey,
+
+    I''ve got my hand on some nice stuff. Are you maybe interested?'
+  Buttons:
+  - {fileID: 11400000, guid: f4377789336974447bbf4bbb49985179, type: 2}
+  - {fileID: 11400000, guid: 2780d6c744c25c240ba03340b1814fd6, type: 2}
+  - {fileID: 11400000, guid: 50e580b23fb025747a60a5d25c24db55, type: 2}
+  isAnswered: 0

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail10
+  m_EditorClassIdentifier: 
+  title: Hey,there is this new foodtruck
+  sender: <johnnycony@alo.com>
+  smallPart: Did you see that new foodtruck...
+  wholeMail: 'Did you see that new food truck in front of our building? I heard they
+    are selling excellent burgers. You should totally check it out. You won''t regret
+    it.
+
+
+
+    Johnny'
+  Buttons:
+  - {fileID: 11400000, guid: 9fade9cbe3f15ff498d16c4ef88826f6, type: 2}
+  - {fileID: 11400000, guid: 9d1c4320a7f496f488db9ccf0f9bd635, type: 2}
+  isAnswered: 0

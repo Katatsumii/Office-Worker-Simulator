@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail11
+  m_EditorClassIdentifier: 
+  title: Hey,i met that girl last night.
+  sender: <johnnycony@alo.com>
+  smallPart: Like in the title...
+  wholeMail: Like in the title I've met amazing girl last night. I think there is
+    some chemistry between us. But i don't know where to take her for the second
+    date. Do you have any idea?
+  Buttons:
+  - {fileID: 11400000, guid: 33db3ee244b97f0418febf4d426f7096, type: 2}
+  - {fileID: 11400000, guid: 7d94f95d4c531d84e84d086686f9b80c, type: 2}
+  - {fileID: 11400000, guid: 7ceb3887cd3c21241af82ee3314a30d3, type: 2}
+  isAnswered: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74eb1b59f8738d847bdb5c778506a1f1, type: 3}
+  m_Name: Endurance7
+  m_EditorClassIdentifier: 
+  bookTitle: How my body helped me survive WW2
+  bookAuthor: Ricardo Riviera
+  bookDescription: Story about survivor of the second world war that hasn't eaten
+    for 3 weeks straight. He died shortly after that but still he lived 3 weeks hungry.
+  bookPrice: 300
+  bookTypeSprite: {fileID: 21300000, guid: fc7e15d77d7ef3a42b3f7c932a6b1a07, type: 3}
+  typeOfBook: 2
+  bookIndex: 15

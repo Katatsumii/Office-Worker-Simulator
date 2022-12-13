@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74eb1b59f8738d847bdb5c778506a1f1, type: 3}
+  m_Name: Endurance8
+  m_EditorClassIdentifier: 
+  bookTitle: Why sleep is usleess
+  bookAuthor: Prof. George Ron
+  bookDescription: Book describing why sleep is useless and why only weak people
+    are sleeping. You are not convinced? Professor George is.
+  bookPrice: 100
+  bookTypeSprite: {fileID: 21300000, guid: fc7e15d77d7ef3a42b3f7c932a6b1a07, type: 3}
+  typeOfBook: 2
+  bookIndex: 16

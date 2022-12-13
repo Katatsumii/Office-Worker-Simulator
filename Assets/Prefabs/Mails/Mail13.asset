@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6700684dc4261874eb08e8e60189910a, type: 3}
+  m_Name: Mail13
+  m_EditorClassIdentifier: 
+  title: There are complaints!
+  sender: <boss@alo.com>
+  smallPart: There are compaints on you!.
+  wholeMail: 'There are complaints!
+
+    Some of our customers are complaining about
+    you being mean and not cooperative. We won''t tolerate that in this company.
+    What do you say in your defence?'
+  Buttons:
+  - {fileID: 11400000, guid: 2aa260dfca06bff42899925aea28ba9d, type: 2}
+  - {fileID: 11400000, guid: c50cfe24c0c10c64aaf3909986091415, type: 2}
+  - {fileID: 11400000, guid: 545d61432e9cb2040905ab808a204203, type: 2}
+  isAnswered: 0
