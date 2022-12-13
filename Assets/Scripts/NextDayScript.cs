@@ -26,12 +26,6 @@ public class NextDayScript : MonoBehaviour
 
     public void GoNextDay()
     {
-        if (timeManager.hours < 15 && playerskills.ninjaBought == false)
-            gameOver.gameOver.Invoke(4);
-        else if(timeManager.hours < 12 && playerskills.ninjaBought == true)
-            gameOver.gameOver.Invoke(4);
-        else
-        {
             if(bigCoffeCup.isActiveAndEnabled)
                 bigCoffeCup.drinkedToday = false;
             if (smallCoffeCups.isActiveAndEnabled)
@@ -50,7 +44,7 @@ public class NextDayScript : MonoBehaviour
             savingManager.SaveGame();
         }
 
-    }
+    
     public void gameObjectDisable()
     {
         timeManager.minutes = 0;

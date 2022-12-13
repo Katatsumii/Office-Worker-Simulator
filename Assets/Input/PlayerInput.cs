@@ -374,6 +374,45 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""InGameOver"",
+            ""id"": ""dbaa651e-7792-4b9f-9ad5-6ca817bf1fc9"",
+            ""actions"": [
+                {
+                    ""name"": ""GoToMM"",
+                    ""type"": ""Button"",
+                    ""id"": ""42745a7e-3df7-4297-9736-c87dd4698605"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""e0aa966a-21d1-4066-b3fc-9099f343fec4"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GoToMM"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""62116878-c5c5-4235-a465-f8be1edb1afc"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GoToMM"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -390,6 +429,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         m_InPauseMenu = asset.FindActionMap("InPauseMenu", throwIfNotFound: true);
         m_InPauseMenu_Return = m_InPauseMenu.FindAction("Return", throwIfNotFound: true);
         m_InPauseMenu_CloseStats = m_InPauseMenu.FindAction("CloseStats", throwIfNotFound: true);
+        // InGameOver
+        m_InGameOver = asset.FindActionMap("InGameOver", throwIfNotFound: true);
+        m_InGameOver_GoToMM = m_InGameOver.FindAction("GoToMM", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -559,6 +601,39 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         }
     }
     public InPauseMenuActions @InPauseMenu => new InPauseMenuActions(this);
+
+    // InGameOver
+    private readonly InputActionMap m_InGameOver;
+    private IInGameOverActions m_InGameOverActionsCallbackInterface;
+    private readonly InputAction m_InGameOver_GoToMM;
+    public struct InGameOverActions
+    {
+        private @PlayerInput m_Wrapper;
+        public InGameOverActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @GoToMM => m_Wrapper.m_InGameOver_GoToMM;
+        public InputActionMap Get() { return m_Wrapper.m_InGameOver; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(InGameOverActions set) { return set.Get(); }
+        public void SetCallbacks(IInGameOverActions instance)
+        {
+            if (m_Wrapper.m_InGameOverActionsCallbackInterface != null)
+            {
+                @GoToMM.started -= m_Wrapper.m_InGameOverActionsCallbackInterface.OnGoToMM;
+                @GoToMM.performed -= m_Wrapper.m_InGameOverActionsCallbackInterface.OnGoToMM;
+                @GoToMM.canceled -= m_Wrapper.m_InGameOverActionsCallbackInterface.OnGoToMM;
+            }
+            m_Wrapper.m_InGameOverActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @GoToMM.started += instance.OnGoToMM;
+                @GoToMM.performed += instance.OnGoToMM;
+                @GoToMM.canceled += instance.OnGoToMM;
+            }
+        }
+    }
+    public InGameOverActions @InGameOver => new InGameOverActions(this);
     public interface IOnFootActions
     {
         void OnWalking(InputAction.CallbackContext context);
@@ -572,5 +647,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     {
         void OnReturn(InputAction.CallbackContext context);
         void OnCloseStats(InputAction.CallbackContext context);
+    }
+    public interface IInGameOverActions
+    {
+        void OnGoToMM(InputAction.CallbackContext context);
     }
 }

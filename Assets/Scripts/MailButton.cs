@@ -22,6 +22,7 @@ public class MailButton : MonoBehaviour
     private MailManager manager;
     public bool isSelected = false;
     public bool isActive = false;
+    public bool isRead = false;
 
     private void Start()
     {
@@ -50,7 +51,9 @@ public class MailButton : MonoBehaviour
             btn.isSelected = false;
         }
         isSelected = true;
-        foreach(Transform item in mailAnswersHolder.transform)
+        isRead = true;
+        mailSpawner.CheckForUnread();
+        foreach (Transform item in mailAnswersHolder.transform)
         {
             Destroy(item.gameObject);
         }

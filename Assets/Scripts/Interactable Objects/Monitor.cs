@@ -8,6 +8,7 @@ public class Monitor : Interactable
     [SerializeField] GameObject monitorCamera;
     [SerializeField] GameObject sittingCamera;
     [SerializeField] GameObject UI;
+    public bool isUsingMonitor = false;
     private void Update()
     {
         if (chair.isSiting == true)
@@ -22,6 +23,7 @@ public class Monitor : Interactable
             monitorCamera.SetActive(true);
             sittingCamera.SetActive(false);
             UI.SetActive(false);
+            isUsingMonitor = true;
         }    
 
     }
@@ -30,5 +32,6 @@ public class Monitor : Interactable
         monitorCamera.SetActive(false);
         sittingCamera.SetActive(true );
         UI.SetActive(true);
+        isUsingMonitor=false;
     }
 }

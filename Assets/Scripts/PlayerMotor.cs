@@ -12,9 +12,6 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     private bool isGrounded;
 
-    [SerializeField]
-    private bool isWalking = false;
- 
     private float gravity = -9.81f;
     private float gravityMultiplier = 3.0f;
     private Vector3 velocity;

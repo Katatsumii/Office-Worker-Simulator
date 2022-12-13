@@ -24,8 +24,6 @@ public class DeleteMail : MonoBehaviour
             {
                 mailSpawner.mailButtons[i].DeleteThisMail();
                 mailSpawner.mailButtons.RemoveAt(i);
-                mailSpawner.activeMails--;
-                
                 bigMailHolder.SetActive(false);
 
             }

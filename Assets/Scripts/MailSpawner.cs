@@ -16,6 +16,7 @@ public class MailSpawner : MonoBehaviour
     private float mailActivatorTimer = 0f;
     [SerializeField]
     private float mailTimer = 0f;
+    [SerializeField] private AudioSource mailAudioSource;
 
     private void Start()
     {
@@ -44,10 +45,11 @@ public class MailSpawner : MonoBehaviour
     {
         mailTimer = Random.Range(30f, 200);
         mailActivatorTimer = 0f;
+        mailAudioSource.Play();
         int number =Random.Range(0, mailButtons.Count);
         mailButtons[number].isActive = true;
         mailButtons[number].gameObject.SetActive(true);
-        activeMails++;
+        CheckForUnread();
 
 
     }
@@ -58,5 +60,13 @@ public class MailSpawner : MonoBehaviour
             countHolder.SetActive(true);
         else 
             countHolder.SetActive(false);
+    }
+    public void CheckForUnread()
+    {
+        activeMails=0;
+        foreach (var mail in mailButtons)
+        if(mail.isActive)
+            if (mail.isRead == false)
+                activeMails++;
     }
 }

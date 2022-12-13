@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -12,9 +13,12 @@ public class GameOver : MonoBehaviour
     private GameObject gameOverCanvas;
     [SerializeField]
     private GameObject uiCanvas;
+    private InputManager inputManager;
+    [SerializeField] GameObject loadingScreen;
 
     private void Start()
     {
+        inputManager = GetComponent<InputManager>();
         playerStats = GetComponent<PlayerStats>();
         gameOver += SwapCanvases;
        
@@ -26,5 +30,13 @@ public class GameOver : MonoBehaviour
         uiCanvas.SetActive(false);
         gameOverScreen = Instantiate(gameOverScreens[index]);
         gameOverScreen.transform.SetParent(gameOverCanvas.transform, false);
+        inputManager.onFoot.Disable();
+        inputManager.inGameOver.Enable();
+
+    }
+    public void GoToMainMenu()
+    {
+        loadingScreen.SetActive(true);
+        SceneManager.LoadSceneAsync(0);
     }
 }

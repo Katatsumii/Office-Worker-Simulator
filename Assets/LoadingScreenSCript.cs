@@ -9,13 +9,28 @@ public class LoadingScreenSCript : MonoBehaviour
     public bool newGame;
     public bool loadGame;
     private void Awake()
-    {   if (instance == null)
+    { if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
-    else
+        else
             Destroy(gameObject);
+        if (loadingscreen == null)
+            loadingscreen = GameObject.Find("LoadingScreen");
+    }
+    private void Start()
+    {
+        { if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+            Destroy(gameObject);
+    }
+        if (loadingscreen == null)
+            loadingscreen = GameObject.Find("LoadingScreen");
     }
     public void newGameChosen()
     {

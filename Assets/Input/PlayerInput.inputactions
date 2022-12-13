@@ -352,6 +352,45 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "InGameOver",
+            "id": "dbaa651e-7792-4b9f-9ad5-6ca817bf1fc9",
+            "actions": [
+                {
+                    "name": "GoToMM",
+                    "type": "Button",
+                    "id": "42745a7e-3df7-4297-9736-c87dd4698605",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e0aa966a-21d1-4066-b3fc-9099f343fec4",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GoToMM",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "62116878-c5c5-4235-a465-f8be1edb1afc",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GoToMM",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
