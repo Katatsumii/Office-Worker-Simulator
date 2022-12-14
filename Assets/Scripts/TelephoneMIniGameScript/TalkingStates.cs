@@ -247,13 +247,14 @@ public class TalkingStates : MonoBehaviour
                 playerStats.numberofCalls++;
                 playerStats.numberofCalls++;
                 playerStats.UpdateSocial(10f);
-                playerStats.UpdateWork(5f);
+                playerStats.UpdateWork(10f);
 
                 break;
             case >= 60 and <= 79:
                 finalArgument = Instantiate(endArguments[2]);
                 playerStats.numberofCalls++;
                 playerStats.numberofContracts++;
+                playerStats.UpdateWork(5f);
                 break;
             case >= 40 and <= 59:
                 finalArgument = Instantiate(endArguments[1]);
@@ -276,6 +277,8 @@ public class TalkingStates : MonoBehaviour
         skillHolder.SetActive(false);
         restartCooldown--;
         skipCooldown--;
+
+        
 
         parentOfEndArguments.SetActive(true);
         

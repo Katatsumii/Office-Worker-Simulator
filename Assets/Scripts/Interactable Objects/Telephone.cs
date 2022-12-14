@@ -32,6 +32,7 @@ public class Telephone : Interactable
             playerCamera.SetActive(false);
             sitingCamera.SetActive(false);
             canvas1.SetActive(false);
+            Cursor.visible = true;
             
         }
     }

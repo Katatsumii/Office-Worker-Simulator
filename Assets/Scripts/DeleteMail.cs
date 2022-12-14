@@ -29,5 +29,14 @@ public class DeleteMail : MonoBehaviour
             }
               
         }
+        for(int i=mailSpawner.mailButtonsPromotion.Count-1; i >= 0;i--)
+        {
+            if(mailSpawner.mailButtonsPromotion[i].isSelected)
+            {
+                mailSpawner.mailButtonsPromotion[i].DeleteThisMail();
+                mailSpawner.mailButtonsPromotion.RemoveAt(i);
+                bigMailHolder.SetActive(false);
+            }
+        }
     }
 }

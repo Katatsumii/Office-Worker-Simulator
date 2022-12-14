@@ -19,6 +19,8 @@ public class CartScript : MonoBehaviour
     [SerializeField] private Sprite sprite1, sprite2, sprite3;
     [SerializeField] private Button buyAllButton;
     [SerializeField] private TextMeshProUGUI buyAllText;
+    [SerializeField] private TransactionList transactionList;
+    [SerializeField] private TimeManager timeManager;
 
 
     private void Update()
@@ -111,6 +113,8 @@ public class CartScript : MonoBehaviour
 
             }
         }
+        stats.UpdateMoney(-totalPricef);
+        transactionList.AddTransaction(timeManager.currentDate, "Book store","-"+totalPricef.ToString()+"$");
         CalculateAmount();
         CalculatePrice();
     }

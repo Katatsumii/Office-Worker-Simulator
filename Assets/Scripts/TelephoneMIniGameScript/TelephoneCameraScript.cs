@@ -44,6 +44,7 @@ public class TelephoneCameraScript : MonoBehaviour
         cameraPlayer.SetActive(true);
         else if (chair.isSiting == true)
         sitingCamera.SetActive(true);
+        Cursor.visible = false;
 
         gameObject.SetActive(false);
     }

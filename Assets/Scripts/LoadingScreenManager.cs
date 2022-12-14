@@ -7,6 +7,8 @@ public class LoadingScreenManager : MonoBehaviour
     private GameObject LoadingScreen;
     void Start()
     {
+        Cursor.visible = false;
+        
         if(LoadingScreen == null)
         {
         LoadingScreen = GameObject.Find("LoadingScreen");

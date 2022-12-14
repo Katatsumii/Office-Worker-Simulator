@@ -19,7 +19,7 @@ public class LoadingScreenSCript : MonoBehaviour
         if (loadingscreen == null)
             loadingscreen = GameObject.Find("LoadingScreen");
     }
-    private void Start()
+    /*private void Start()
     {
         { if (instance == null)
         {
@@ -31,7 +31,7 @@ public class LoadingScreenSCript : MonoBehaviour
     }
         if (loadingscreen == null)
             loadingscreen = GameObject.Find("LoadingScreen");
-    }
+    }*/
     public void newGameChosen()
     {
         newGame=true;

@@ -25,6 +25,8 @@ public class MailManager : MonoBehaviour
     private PlayerStats playerStats;
     [SerializeField]
     private TextMeshProUGUI bigMail, author, title;
+    [SerializeField] private TimeManager timeManager;
+    [SerializeField] private TransactionList transactionList;
 
     public void SetActiveMail(Mails mail)
     {
@@ -74,6 +76,11 @@ public class MailManager : MonoBehaviour
         playerStats.UpdateEnergy(stats.staminaCost);
         playerStats.UpdateSocial(stats.socialCost);
         playerStats.UpdateMoney(stats.money);
+        if(stats.money>0)
+            transactionList.AddTransaction(timeManager.currentDate, "Mail", "+" + stats.money.ToString() + "$");
+        else if(stats.money<0)
+            transactionList.AddTransaction(timeManager.currentDate, "Mail", "-" + stats.money.ToString() + "$");
+
         playerStats.UpdateWork(stats.work);
         playerStats.mailsAnswered++;
         if (stats.isGameOver != 0)
@@ -161,7 +168,7 @@ public class MailManager : MonoBehaviour
             if (stats.work != 0)
             {
                 workHolder.SetActive(true);
-                workHolder.GetComponent<TextMeshProUGUI>().text = "Money: ";
+                workHolder.GetComponent<TextMeshProUGUI>().text = "Work: ";
                 if (stats.work > 0)
                 {
                     workHolder.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "+" + stats.work;

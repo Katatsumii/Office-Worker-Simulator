@@ -6,6 +6,7 @@ using TMPro;
 public class MailSpawner : MonoBehaviour
 {
     public List<MailButton> mailButtons = new List<MailButton>();
+    public List<MailButton> mailButtonsPromotion= new List<MailButton>();
     [SerializeField]
     private TextMeshProUGUI activeMailsCount;
     public int activeMails = 0;
@@ -53,6 +54,13 @@ public class MailSpawner : MonoBehaviour
 
 
     }
+    public void SendPromotionMail(int i)
+    {
+        mailAudioSource.Play();
+        mailButtonsPromotion[i].isActive = true;
+        mailButtonsPromotion[i].gameObject.SetActive(true);
+        CheckForUnread();
+    }
     private void CheckForActives()
     {
         activeMailsCount.text = activeMails + "";
@@ -67,6 +75,10 @@ public class MailSpawner : MonoBehaviour
         foreach (var mail in mailButtons)
         if(mail.isActive)
             if (mail.isRead == false)
+                activeMails++;
+        foreach (var mail2 in mailButtonsPromotion)
+            if(mail2.isActive)
+            if (mail2.isRead == false)
                 activeMails++;
     }
 }

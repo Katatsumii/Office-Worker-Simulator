@@ -24,6 +24,7 @@ public class Monitor : Interactable
             sittingCamera.SetActive(false);
             UI.SetActive(false);
             isUsingMonitor = true;
+            Cursor.visible = true;
         }    
 
     }
@@ -33,5 +34,6 @@ public class Monitor : Interactable
         sittingCamera.SetActive(true );
         UI.SetActive(true);
         isUsingMonitor=false;
+        Cursor.visible = false;
     }
 }

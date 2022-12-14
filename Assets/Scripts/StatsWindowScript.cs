@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 
 public class StatsWindowScript : MonoBehaviour
@@ -31,8 +32,21 @@ public class StatsWindowScript : MonoBehaviour
 
     [SerializeField] PlayerStats playerStats;
     [SerializeField] PlayerSkills playerSkills;
+
+    public Action sometingBought;
     private void Start()
     {
+        sometingBought += RefreshCv;
+        sometingBought?.Invoke();
+            
+    }
+    private void OnEnable()
+    {
+        sometingBought?.Invoke();
+    }
+    private void RefreshCv()
+    {
+        Debug.Log("Refreshing CV");
         playerCharisma.text = playerStats.charisma + "";
         playerEndurance.text = playerStats.endurance + "";
         playerInt.text = playerStats.intelligence + "";
@@ -40,13 +54,13 @@ public class StatsWindowScript : MonoBehaviour
         playerMaxS.text = playerStats.maxSocial + "";
         if (playerSkills.skipbought)
             skipQuestion.color = Color.black;
-        if(playerSkills.restartbought)
+        if (playerSkills.restartbought)
             secondChance.color = Color.black;
-        if(playerSkills.ninjaBought)
+        if (playerSkills.ninjaBought)
             ninjaTraining.color = Color.black;
-        if(playerSkills.boostBreakBought)
+        if (playerSkills.boostBreakBought)
             monkPatience.color = Color.black;
-        if(playerSkills.changeBought)
+        if (playerSkills.changeBought)
             fastThinking.color = Color.black;
         if (playerSkills.boostCoffeBought)
             coffeeM.color = Color.black;
@@ -55,7 +69,9 @@ public class StatsWindowScript : MonoBehaviour
         numberOfContracts.text = playerStats.numberofContracts + "";
         freeDays.text = playerStats.freeDays + "";
         mailsAnswered.text = playerStats.mailsAnswered + "";
-            
+
     }
+
+    
 
 }

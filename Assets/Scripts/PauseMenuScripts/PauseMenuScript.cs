@@ -12,6 +12,7 @@ public class PauseMenuScript : MonoBehaviour
     private GameObject buttons;
     [SerializeField]
     private GameObject optionsPanel;
+    [SerializeField] Monitor monitor;
     public void OpenPauseMenu()
     {
         Ui.SetActive(false);
@@ -19,6 +20,8 @@ public class PauseMenuScript : MonoBehaviour
         inputManager.onFoot.Disable();
         inputManager.inPauseMenu.Enable();
         Time.timeScale = 0f;
+        Cursor.visible = true;
+        
 
     }
     public void ClosePauseMenu()
@@ -30,6 +33,10 @@ public class PauseMenuScript : MonoBehaviour
         Time.timeScale = 1f;
         optionsPanel.SetActive(false);
         buttons.SetActive(true);
+
+        if(monitor.isUsingMonitor==false)
+        Cursor.visible = false;
+        
 
 
     }

@@ -34,9 +34,6 @@ public class BoughtBooksCript : MonoBehaviour
             boughtbookscript.bookImage.sprite = sprite2;
         else if (book.typeofBook == 3)
             boughtbookscript.bookImage.sprite = sprite3;
-        var bookbutton = boughtbook.transform.GetChild(0).gameObject.GetComponent<Button>();
-        bookbutton.onClick.AddListener(() => boughtbookscript.ReadBook());
-        //bookbutton.onClick.AddListener(() => Debug.Log("TE"));
     }
 
 }

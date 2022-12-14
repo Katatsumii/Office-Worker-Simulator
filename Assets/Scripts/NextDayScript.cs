@@ -18,7 +18,7 @@ public class NextDayScript : MonoBehaviour
 [SerializeField] private TextMeshProUGUI secondline;
 [SerializeField] private TextMeshProUGUI thirdline;
 [SerializeField] private PlayerSkills playerskills;
-    [SerializeField] private GameOver gameOver;
+[SerializeField] private GameOver gameOver;
 
 
 
