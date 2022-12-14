@@ -17,7 +17,7 @@ MonoBehaviour:
   smallPart: I need you to take care of something...
   wholeMail: There is this big deal coming and I need you to take care of it. Why
     you? Because u are the only one working that day because it's holiday. So you
-    better not mess it out.
+    better not mess it up.
   Buttons:
   - {fileID: 11400000, guid: 31ecf6cbddc172c41a2444060e8bb82e, type: 2}
   - {fileID: 11400000, guid: 41347de38e17fa143afdfe9f20eebe04, type: 2}

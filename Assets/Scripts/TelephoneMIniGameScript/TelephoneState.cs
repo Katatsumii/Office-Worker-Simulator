@@ -23,6 +23,11 @@ public class TelephoneState : MonoBehaviour
     public GameObject callingImage;
     public GameObject talkingImage;
     public GameObject callingComponents;
+    [SerializeField] GameObject callingCamera;
+    [SerializeField] GameObject mainCamera;
+    [SerializeField] GameObject sitCamera;
+    [SerializeField] GameObject ui;
+    [SerializeField] Chair chair;
 
     private void Start()
     {
@@ -74,6 +79,15 @@ public class TelephoneState : MonoBehaviour
         if(callTimer>callTime)
         {
             ChangeState(telephoneStates.idle);
+            if(chair.isSiting==true)
+                sitCamera.SetActive(true);
+            else
+                mainCamera.SetActive(true);
+            callingCamera.SetActive(false);
+            ui.SetActive(true);
+            Cursor.visible = false;
+
+
             
         }
 

@@ -50,6 +50,7 @@ public class MailSpawner : MonoBehaviour
         int number =Random.Range(0, mailButtons.Count);
         mailButtons[number].isActive = true;
         mailButtons[number].gameObject.SetActive(true);
+        mailButtons[number].transform.SetAsFirstSibling();
         CheckForUnread();
 
 
@@ -59,6 +60,7 @@ public class MailSpawner : MonoBehaviour
         mailAudioSource.Play();
         mailButtonsPromotion[i].isActive = true;
         mailButtonsPromotion[i].gameObject.SetActive(true);
+        mailButtonsPromotion[i].transform.SetAsFirstSibling();
         CheckForUnread();
     }
     private void CheckForActives()

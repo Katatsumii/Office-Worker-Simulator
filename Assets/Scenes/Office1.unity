@@ -5735,7 +5735,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh118442
+  m_Name: pb_Mesh41418
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41615,7 +41615,7 @@ Camera:
   far clip plane: 14
   field of view: 25
   orthographic: 1
-  orthographic size: 0.21
+  orthographic size: 0.22
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -41639,7 +41639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740103811}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -47.5, y: 1.31, z: 4.508}
+  m_LocalPosition: {x: -47.5, y: 1.303, z: 4.617}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44335,11 +44335,11 @@ Light:
   m_GameObject: {fileID: 1886230504}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 1
+  m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.9071373, b: 0.7783019, a: 1}
-  m_Intensity: 2.25
-  m_Range: 1
+  m_Intensity: 1
+  m_Range: 8
   m_SpotAngle: 30
   m_InnerSpotAngle: 30
   m_CookieSize: 10
@@ -44377,7 +44377,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 5
@@ -52515,7 +52515,7 @@ PrefabInstance:
     - target: {fileID: 7369825329045837940, guid: 19256e889afb4584ebd00ed0aec5fadc,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.9531412
+      value: 1.1164788
       objectReference: {fileID: 0}
     - target: {fileID: 7369825329045837940, guid: 19256e889afb4584ebd00ed0aec5fadc,
         type: 3}
@@ -52525,12 +52525,12 @@ PrefabInstance:
     - target: {fileID: 7369825329045837940, guid: 19256e889afb4584ebd00ed0aec5fadc,
         type: 3}
       propertyPath: m_Size.z
-      value: 0.50293136
+      value: 0.815849
       objectReference: {fileID: 0}
     - target: {fileID: 7369825329045837940, guid: 19256e889afb4584ebd00ed0aec5fadc,
         type: 3}
       propertyPath: m_Center.x
-      value: -0.2060537
+      value: -0.12438486
       objectReference: {fileID: 0}
     - target: {fileID: 7369825329045837940, guid: 19256e889afb4584ebd00ed0aec5fadc,
         type: 3}
@@ -52540,8 +52540,28 @@ PrefabInstance:
     - target: {fileID: 7369825329045837940, guid: 19256e889afb4584ebd00ed0aec5fadc,
         type: 3}
       propertyPath: m_Center.z
-      value: -0.08627057
+      value: 0.07018829
       objectReference: {fileID: 0}
+    - target: {fileID: 8460076608898411913, guid: 19256e889afb4584ebd00ed0aec5fadc,
+        type: 3}
+      propertyPath: ui
+      value: 
+      objectReference: {fileID: 336354339}
+    - target: {fileID: 8460076608898411913, guid: 19256e889afb4584ebd00ed0aec5fadc,
+        type: 3}
+      propertyPath: chair
+      value: 
+      objectReference: {fileID: 180177172}
+    - target: {fileID: 8460076608898411913, guid: 19256e889afb4584ebd00ed0aec5fadc,
+        type: 3}
+      propertyPath: sitCamera
+      value: 
+      objectReference: {fileID: 213764029}
+    - target: {fileID: 8460076608898411913, guid: 19256e889afb4584ebd00ed0aec5fadc,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 330585543}
     - target: {fileID: 8460076608898411913, guid: 19256e889afb4584ebd00ed0aec5fadc,
         type: 3}
       propertyPath: callingImage
@@ -52552,6 +52572,11 @@ PrefabInstance:
       propertyPath: talkingImage
       value: 
       objectReference: {fileID: 2050192080}
+    - target: {fileID: 8460076608898411913, guid: 19256e889afb4584ebd00ed0aec5fadc,
+        type: 3}
+      propertyPath: callingCamera
+      value: 
+      objectReference: {fileID: 722959015}
     - target: {fileID: 8460076608898411913, guid: 19256e889afb4584ebd00ed0aec5fadc,
         type: 3}
       propertyPath: callingComponents

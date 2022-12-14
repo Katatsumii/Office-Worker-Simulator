@@ -10,6 +10,7 @@ public class SceneLoading : MonoBehaviour
     private void Start()
     {
         LoadingScreen.SetActive(false);
+        Cursor.visible = true;
     }
     public void LoadScene(int sceneId)
     {
