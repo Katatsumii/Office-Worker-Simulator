@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class SavingManager:MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class SavingManager:MonoBehaviour
    private List<ISavingManager> savingManagers;
     [SerializeField] private string fileName;
 
+    private GameObject dontDestroy;
+    private LoadingScreenSCript loadingScreenScript;
     private FileDataHandler fileHandler;
    public static SavingManager instance { get; private set; }
     private void Awake()
@@ -16,31 +19,34 @@ public class SavingManager:MonoBehaviour
         if (instance != null)
             Debug.Log("There is already saving manager in this scene.");
         instance = this;
+
     }
     private void Start()
     {
-        this.fileHandler = new FileDataHandler(Application.persistentDataPath,fileName);
+        this.fileHandler = new FileDataHandler(Application.persistentDataPath, fileName);
         this.savingManagers = FindAllSavingManagerObjects();
-        var ddm = GameObject.Find("DontDestroyManager");
-        if (ddm != null)
+        
+        dontDestroy= GameObject.Find("DontDestroyManager");
+        if (dontDestroy != null)
         {
-            var script = ddm.GetComponent<LoadingScreenSCript>();
-            if (script.loadGame == true)
+            loadingScreenScript = dontDestroy.GetComponent<LoadingScreenSCript>();
+            if (loadingScreenScript.loadGame == true)
             {
                 LoadGame();
-                script.loadGame = false;
+                loadingScreenScript.loadGame = false;
 
             }
-            else if (script.newGame == true)
+            else if (loadingScreenScript.newGame == true)
             {
                 NewGame();
-                script.newGame = false;
+                loadingScreenScript.newGame = false;
             }
         }
         else
             return;
 
     }
+
     public void NewGame()
     {
         this.gameData=new GameData();

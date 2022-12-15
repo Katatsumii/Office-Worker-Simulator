@@ -19,26 +19,4 @@ public class LoadingScreenSCript : MonoBehaviour
         if (loadingscreen == null)
             loadingscreen = GameObject.Find("LoadingScreen");
     }
-    /*private void Start()
-    {
-        { if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-            Destroy(gameObject);
-    }
-        if (loadingscreen == null)
-            loadingscreen = GameObject.Find("LoadingScreen");
-    }*/
-    public void newGameChosen()
-    {
-        newGame=true;
-    }
-    public void continueChosen()
-    {
-        loadGame=true;
-    }
-   
 }

@@ -14,6 +14,8 @@ public class TimeManager : MonoBehaviour,ISavingManager
     [SerializeField] private TextMeshProUGUI cMonth;
     [SerializeField] private TextMeshProUGUI cYears;
 
+    [SerializeField] GameOver gameOver;
+
 
     public string currentDate;
     public float hours;
@@ -41,6 +43,10 @@ public class TimeManager : MonoBehaviour,ISavingManager
         AssignText();
 
         currentDate = days.ToString("00")+"."+ months.ToString("00")+"."+ years.ToString("00");
+
+        if (hours > 18)
+            gameOver.gameOver.Invoke(0);
+
        
       
         

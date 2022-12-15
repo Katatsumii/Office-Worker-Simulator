@@ -34,6 +34,22 @@ public class YourBook : MonoBehaviour
         bookButtonText = bookButton.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 
     }
+    private void Update()
+    {
+        if(stats.energy<11)
+        {
+            bookButton.interactable = false;
+            bookButtonText.text = "ENERGY TOO LOW";
+        }
+        else
+        {
+            bookButton.interactable = true;
+            bookButtonText.text = "READ";
+
+        }
+            
+        
+    }
 
     public void ReadBook()
     {
@@ -55,6 +71,7 @@ public class YourBook : MonoBehaviour
             stats.UpdateEndurance();
         else if (typeofBook == 3)
             stats.UpdateIntelligence();
+        stats.UpdateEnergy(-10);
         Destroy(this.gameObject);
     }
     
